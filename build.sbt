@@ -16,14 +16,19 @@ ThisBuild / scalacOptions ++= Seq(
 ThisBuild / fork := true
 
 ThisBuild / libraryDependencies ++= Seq(
-  "org.scalacheck" %% "scalacheck" % "1.15.4" % Test
+  "org.scalacheck" %% "scalacheck" % "1.15.4"
 )
 
 lazy val root = project.in(file("."))
   .settings(name := "scalacheck-guide")
   .aggregate(
-    foundation
+    foundation,
+    fundamentals
   )
 
 lazy val foundation = project.in(file("foundation"))
-  .settings(libraryDependencies += "org.junit.vintage" % "junit-vintage-engine" % "5.8.2" % Test)
+  .settings(
+    libraryDependencies += "org.junit.vintage" % "junit-vintage-engine" % "5.8.2" % Test
+  )
+
+lazy val fundamentals = project.in(file("fundamentals"))

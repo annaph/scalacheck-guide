@@ -10,4 +10,7 @@ The source code contains different modules for the following chapters:
 1. Chapter 2 - ScalaCheck versus JUnit: A Complete Example  
     Module name: **foundation**
 
-2. ???
+2. Chapter 3 - ScalaCheck Fundamentals  
+    Module name: **fundamentals**
+
+3. ???
