@@ -13,4 +13,7 @@ The source code contains different modules for the following chapters:
 2. Chapter 3 - ScalaCheck Fundamentals  
     Module name: **fundamentals**
 
-3. ???
+3. Chapter 4 - Designing Properties  
+   Module name: **designing-properties**
+
+4. ???

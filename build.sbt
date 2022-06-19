@@ -23,7 +23,8 @@ lazy val root = project.in(file("."))
   .settings(name := "scalacheck-guide")
   .aggregate(
     foundation,
-    fundamentals
+    fundamentals,
+    designingProperties
   )
 
 lazy val foundation = project.in(file("foundation"))
@@ -32,3 +33,5 @@ lazy val foundation = project.in(file("foundation"))
   )
 
 lazy val fundamentals = project.in(file("fundamentals"))
+
+lazy val designingProperties = project.in(file("designing-properties"))

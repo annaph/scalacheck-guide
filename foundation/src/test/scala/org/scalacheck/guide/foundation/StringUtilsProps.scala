@@ -7,17 +7,17 @@ import org.scalacheck.{Prop, Properties}
 object StringUtilsProps extends Properties(name = "StringUtils") {
 
   property("truncate") =
-    Prop.forAll { (s: String, n: Int) =>
-      val actual = StringUtils.truncate(s, n)
+    Prop.forAll { (str: String, n: Int) =>
+      val actual = StringUtils.truncate(str, n)
 
-      if (n < 0) actual.isEmpty else {
-        lazy val actualWithoutDots = actual.take(actual.length - 3)
-        lazy val actualDots = actual.drop(actual.length - 3)
+      if (n < 0) actual.isEmpty
+      else if (str.length <= n) actual == str
+      else {
+        lazy val condition1 = actual.length == n + 3
+        lazy val condition2 = (0 until n).forall(i => actual(i) == str(i))
+        lazy val condition3 = (1 to 3).forall(i => actual(actual.length - i) == '.')
 
-        lazy val condition1 = s.length <= n && actual == s
-        lazy val condition2 = s.length > n && s.indexOf(actualWithoutDots) == 0 && actualDots == "..."
-
-        condition1 || condition2
+        condition1 && condition2 && condition3
       }
     }
 
