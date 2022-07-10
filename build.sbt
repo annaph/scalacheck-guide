@@ -24,7 +24,8 @@ lazy val root = project.in(file("."))
   .aggregate(
     foundation,
     fundamentals,
-    designingProperties
+    designingProperties,
+    properties
   )
 
 lazy val foundation = project.in(file("foundation"))
@@ -35,3 +36,5 @@ lazy val foundation = project.in(file("foundation"))
 lazy val fundamentals = project.in(file("fundamentals"))
 
 lazy val designingProperties = project.in(file("designing-properties"))
+
+lazy val properties = project.in(file("properties"))

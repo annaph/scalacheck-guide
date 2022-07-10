@@ -16,4 +16,5 @@ The source code contains different modules for the following chapters:
 3. Chapter 4 - Designing Properties  
    Module name: **designing-properties**
 
-4. ???
+4. Chapter 5 - Properties in Detail  
+   Module name: **properties**
