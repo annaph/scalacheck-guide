@@ -18,3 +18,6 @@ The source code contains different modules for the following chapters:
 
 4. Chapter 5 - Properties in Detail  
    Module name: **properties**
+
+5. Chapter 6 - Generators in Detail  
+   Module name: **generators**
