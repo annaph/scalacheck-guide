@@ -21,3 +21,6 @@ The source code contains different modules for the following chapters:
 
 5. Chapter 6 - Generators in Detail  
    Module name: **generators**
+
+6. Chapter 7 - Running ScalaCheck  
+   Module name: **running**
